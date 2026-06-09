@@ -1,0 +1,12 @@
+@import "tailwindcss";
+body {
+  font-family: "Inter", sans-serif;
+  background: #0d0d0d;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
