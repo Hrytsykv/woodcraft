@@ -57,6 +57,50 @@ export default function Header({
   >
     {t.orderQuote}
   </a>
+  <div className="border-t border-white/10 pt-5 mt-2">
+
+  <p className="text-gray-400 text-sm mb-3">
+    Language
+  </p>
+
+  <div className="flex gap-3">
+
+    <button
+      onClick={() => setLang("cs")}
+      className={`px-4 py-2 rounded-lg ${
+        lang === "cs"
+          ? "bg-[#c9a27c] text-black"
+          : "bg-[#1a1a1a] text-white"
+      }`}
+    >
+      🇨🇿 CZ
+    </button>
+
+    <button
+      onClick={() => setLang("uk")}
+      className={`px-4 py-2 rounded-lg ${
+        lang === "uk"
+          ? "bg-[#c9a27c] text-black"
+          : "bg-[#1a1a1a] text-white"
+      }`}
+    >
+      🇺🇦 UA
+    </button>
+
+    <button
+      onClick={() => setLang("en")}
+      className={`px-4 py-2 rounded-lg ${
+        lang === "en"
+          ? "bg-[#c9a27c] text-black"
+          : "bg-[#1a1a1a] text-white"
+      }`}
+    >
+      🇬🇧 EN
+    </button>
+
+  </div>
+
+</div>
 
   <div className="relative">
 
