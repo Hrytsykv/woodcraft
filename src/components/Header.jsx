@@ -173,6 +173,43 @@ export default function Header({
               >
                 {t.orderQuote}
               </a>
+              <div className="border-t border-white/10 pt-5 mt-2">
+
+  <p className="text-gray-400 text-sm mb-3">
+    🌍 Language
+  </p>
+
+  <button
+    onClick={() => {
+      setLang("cs");
+      setIsOpen(false);
+    }}
+    className="w-full text-left py-3 text-white hover:text-[#c9a27c]"
+  >
+    🇨🇿 Čeština
+  </button>
+
+  <button
+    onClick={() => {
+      setLang("uk");
+      setIsOpen(false);
+    }}
+    className="w-full text-left py-3 text-white hover:text-[#c9a27c]"
+  >
+    🇺🇦 Українська
+  </button>
+
+  <button
+    onClick={() => {
+      setLang("en");
+      setIsOpen(false);
+    }}
+    className="w-full text-left py-3 text-white hover:text-[#c9a27c]"
+  >
+    🇬🇧 English
+  </button>
+
+</div>
 
             </nav>
 
